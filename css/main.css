@@ -51,6 +51,7 @@ body {
 }
 .container {
   outline: 1px solid tomato;
+  width: 1280px;
 }
 .navigation-list-link {
   font-family: Open Sans;
@@ -98,15 +99,34 @@ body {
   background-color: #ff6c00;
 }
 .section-slogan {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
-  color: rgba(157, 164, 189, 0.6);
+  color: #303030;
+}
+/* .section-slogan .dark {
+  rgba(157, 164, 189, 0.6);
+} */
+.section-slogan::before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: super;
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+.hero-section {
+  min-height: 680px;
+}
+.hero-section .container {
+  background-color: black;
 }
 .hero-title {
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -115,9 +135,10 @@ body {
 
   letter-spacing: 0.05em;
 
-  /* color: #FFFFFF; */
+  color: #ffffff;
 }
 .section-subscription {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -127,6 +148,19 @@ body {
 .section-subscription.dark {
   color: #9da4bd;
 }
+.social-links-list {
+  display: flex;
+}
+.social-links-list::before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: super;
+  margin-right: 40px;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
 .social-link {
   font-weight: 600;
   font-size: 11px;
@@ -149,10 +183,32 @@ body {
 
   color: #303030;
 }
-.section-title.dark {
-  /* color: #FFFFFF; */
+/* .section-title.dark {
+  color: #FFFFFF;
+} */
+
+.about-section,
+.price-section,
+.master-section,
+.gallery-section,
+.contacts-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about-section > .container {
+  display: flex;
+  padding-left: 55px;
+  padding-right: 91px;
+}
+.about-section img:first-of-type {
+  margin-right: 30px;
+}
+.about-wrapper {
+  margin-left: 64px;
 }
 .about-text {
+  margin-bottom: 44px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
@@ -160,6 +216,7 @@ body {
 
   color: #555555;
 }
+
 .achievements-list {
   font-weight: 600;
   font-size: 11px;
@@ -181,6 +238,9 @@ body {
   text-align: center;
   color: #ff6c00;
 }
+.master-list {
+  display: flex;
+}
 .master-name {
   font-weight: 400;
   font-size: 18px;
@@ -198,6 +258,12 @@ body {
   letter-spacing: 0.02em;
 
   color: #ff6c00;
+}
+.gallery-list {
+  display: flex;
+}
+.footer-section {
+  padding: 56px 55px;
 }
 .address {
   font-weight: 400;

@@ -14,10 +14,10 @@
         <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header>
+    <header class="header-section">
         <div class="container">
-            <svg class="logo">
-                <use xlink:href="#"></use>
+            <svg class="logo" width="68" height="55">
+                <use xlink:href="./images/svg-sprite.svg#icon-logo"></use>
             </svg>
             <nav>
                 <ul class="navigation-list">
@@ -42,7 +42,7 @@
     </header>
 
 <main>
-<section class="hero">
+<section class="hero-section">
     <div class="container">
         <p class="section-slogan">A hair salon for men in Kyiv</p>
         <h1 class="hero-title">BarberShop</h1>
@@ -56,24 +56,28 @@
 
 </section>
 
-<section class="about">
+<section class="about-section">
     <div class="container">
-        <img src="#" alt="борода">
-        <img src="#" alt="стрижка">
-        <p class="section-slogan">О НАС</p>
-        <h2 class="section-title">Лучший Барбершоп
-            твоего города</h2>
-        <p class="section-subscription">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-        <p class="about-text">Мы команда, которая никогда не останавливается на достигнутом
-            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
-            готовы усовершенствовать каждого, кто к нам приходит!</p>
-        <button class="button" type="button">онлайн-запись</button>
+        <img src="./images/img 1 (1).jpg" alt="борода">
+        <img src="./images/img 2 (1).jpg" alt="стрижка">
+
+        <div class="about-wrapper">
+            <p class="section-slogan">О НАС</p>
+            <h2 class="section-title">Лучший Барбершоп
+                твоего города</h2>
+            <p class="section-subscription">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+            <p class="about-text">Мы команда, которая никогда не останавливается на достигнутом
+                и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
+                готовы усовершенствовать каждого, кто к нам приходит!</p>
+            <button class="button" type="button">онлайн-запись</button>
+        </div>
+        
     </div>
 
 </section>
 
-<section class="price">
+<section class="price-section">
     <div class="container">
         <p class="section-slogan">Проведи время в компании лучших мастеров</p>
         <h2 class="section-title dark">Услуги и цены</h2>
@@ -85,7 +89,7 @@
     
 </section>
 
-<section class="achievements">
+<section class="achievements-section">
     <div class="container">
         <ul class="achievements-list">
             <li><span>600</span><sup>+</sup> Довольных клиентов в день</li>
@@ -101,49 +105,97 @@
 
 </section>
 
-<section class="master">
+<section class="master-section">
     <div class="container">
         <p class="section-slogan">для настоящих ценителей атмосферы</p>
         <h2 class="section-title">Наши мастера</h2>
         <ul class="master-list">
             <li>
-                <img src="#" alt="John Smith">
+                <img src="./images/img 4 (1).jpg" alt="John Smith">
                 <h3 class="master-name">John Smith</h3>
                 <p class="master-specialization">Extreme Barber</p>
         
                 <ul>
-                    <li><a href="#">Instsgram</a></li>
-                    <li> <a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li> <a href="#">LinkedIn</a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20">
+                            <use xlink:href="./images/svg-sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a></li>
+                    <li> <a href="#">
+                        <svg width="20" height="20">
+                            <use xlink:href="./images/svg-sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20">
+                            <use xlink:href="./images/svg-sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a></li>
+                    <li> <a href="#">
+                        <svg width="20" height="20">
+                            <use xlink:href="./images/svg-sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a></li>
         
                 </ul>
             </li>
         
             <li>
-                <img src="#" alt="Michele Doe">
+                <img src="./images/img 5 (1).jpg" alt="Michele Doe">
                 <h3 class="master-name">Michele Doe</h3>
                 <p class="master-specialization">Extreme Barber</p>
         
                 <ul>
-                    <li><a href="#">Instsgram</a></li>
-                    <li> <a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li> <a href="#">LinkedIn</a></li>
+                    <li><a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li> <a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li> <a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
         
                 </ul>
             </li>
         
             <li>
-                <img src="#" alt="Alan Black">
+                <img src="./images/img 6 (1).jpg" alt="Alan Black">
                 <h3 class="master-name">Alan Black</h3>
                 <p class="master-specialization">Extreme Barber</p>
         
                 <ul>
-                    <li><a href="#">Instsgram</a></li>
-                    <li> <a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li> <a href="#">LinkedIn</a></li>
+                    <li><a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li> <a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li> <a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="./images/svg-sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
         
                 </ul>
             </li>
@@ -153,37 +205,50 @@
     
 </section>
 
-<section class="gallery">
+<section class="gallery-section">
     <div class="container">
         <p class="section-slogan">На латинском языке “барба” означает “борода”</p>
-        <ul>
+        <ul class="gallery-list">
             <li>
-                <img src="" alt="стрижка">
+                <img src="./images/img 7 (1).jpg" alt="стрижка">
             </li>
             <li>
-                <img src="" alt="бритьё">
+                <img src="./images/img 8 (1).jpg" alt="бритьё">
             </li>
             <li>
-                <img src="" alt="распаривание лица">
+                <img src="./images/img 9 (1).jpg" alt="распаривание лица">
             </li>
             <li>
-                <img src="" alt="бритьё">
+                <img src="./images/img 10 (1).jpg" alt="бритьё">
             </li>
         </ul>
     </div>
     
 </section>
 
-<section class="contacts">
+<section class="contacts-section">
     <div class="container">
         <h2 class="section-title dark">Онлайн-запись</h2>
         <form action=""></form>
         
         <h2 class="section-title dark">Контакты</h2>
+
+        <svg width="24" height="24">
+            <use xlink:href="./images/svg-sprite.svg#icon-map-pin"></use>
+        </svg>
         <address class="address">
             <p>ул. Васильковая, 7А
                 Киев, 08132</p>
+
+
+             <svg width="24" height="24">
+                <use xlink:href="./images/svg-sprite.svg#icon-phone"></use>
+             </svg>
             <a href="tel:+380441111111">+38 044 111 11 11</a>
+
+            <svg width="24" height="24">
+                <use xlink:href="./images/svg-sprite.svg#icon-mail"></use>
+            </svg>
             <a class="contacts-mail" href="tomail:barbershop@email.com">barbershop@email.com</a>
         </address>
         
@@ -196,7 +261,7 @@
 
 
 </main>
-<footer>
+<footer class="footer-section">
     <div class="container">
         <p class="copy">&copy; Copyright 2020</p>
         <ul class="social-links-list">
