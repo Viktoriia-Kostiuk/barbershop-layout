@@ -259,9 +259,7 @@ body {
 .master-list {
   display: flex;
 }
-.master-list-item {
-  /* outline: 1px solid tomato; */
-}
+
 .master-list-item:not(:last-child) {
   margin-right: 30px;
 }
