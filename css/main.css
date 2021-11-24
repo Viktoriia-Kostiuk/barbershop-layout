@@ -100,6 +100,7 @@ body {
   background-color: #ff6c00;
 }
 .section-slogan {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -202,9 +203,7 @@ body {
   padding-left: 55px;
   padding-right: 91px;
 }
-.about-section .section-slogan {
-  margin-bottom: 20px;
-}
+
 .about-section img:first-of-type {
   margin-right: 30px;
 }
@@ -217,16 +216,73 @@ body {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-
+  /* width: 500px; */
   color: #555555;
 }
 
+.price-section {
+  background-color: #f7f7f7;
+  /* background-image: url(../images/img 3(1).jpg); */
+}
+.price-section .container {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.price-section .section-title {
+  margin-bottom: 44px;
+}
+.price-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.price-table {
+  padding: 30px 40px;
+}
+.price-table-item {
+  display: flex;
+  justify-content: space-between;
+}
+/* .price-table-item:first-child::after {
+  content: '';
+  height: 1px;
+  width: 100px;
+  background-color: black;
+  /* rgba(157, 164, 189, 0.12); */
+} */
+
+.price-table-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.price-section .button {
+  margin: 0 auto;
+}
+
+.achievements-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.achievements-section .container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 155px;
+  padding-right: 125px;
+}
+.achievements-wrapper {
+  margin-left: 130px;
+}
 .achievements-list {
+  display: flex;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
   color: #303030;
+}
+.achievements-list-item {
+  background-color:  #F7F7F7;
+  width: 170px;
+  height: 133px;
 }
 .achievements-list span {
   font-weight: 700;
@@ -250,9 +306,7 @@ body {
   padding-left: 55px;
   padding-right: 55px;
 }
-.master-section .section-slogan {
-  margin-bottom: 20px;
-}
+
 .master-section .section-title {
   margin-bottom: 44px;
 }
