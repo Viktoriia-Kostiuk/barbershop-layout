@@ -16,27 +16,39 @@
 <body>
     <header class="header-section">
         <div class="container">
-            <svg class="logo" width="68" height="55">
-                <use xlink:href="./images/svg-sprite.svg#icon-logo"></use>
-            </svg>
-            <nav>
-                <ul class="navigation-list">
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-link" href="#">О нас</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-link" href="#">Услуги и цены</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-link" href="#">Мастера</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-link" href="#">Контакты</a>
-                    </li>
+            <div class="header-menu">
+                <nav>
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-link" href="#">О нас</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-link" href="#">Услуги и цены</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-link" href="#">Мастера</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <a class="number-link" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button class="button" type="button">онлайн-запись</button>
+            </div>
+            
+
+            <aside class="header-sidebar">
+                <ul class="social-links-list">
+                    <li><a class="social-link" href="#">Instagram</a></li>
+                    <li><a class="social-link" href="#">Youtube</a></li>
                 </ul>
-            </nav>
-            <a class="number-link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="button" type="button">онлайн-запись</button>
+                <svg class="logo" width="68" height="55">
+                    <use xlink:href="./images/svg-sprite.svg#icon-logo"></use>
+                </svg>
+            </aside>
+            
         </div>
 
     </header>
@@ -48,10 +60,7 @@
         <h1 class="hero-title">BarberShop</h1>
         <p class="section-subscription dark">Мы эксперты в модных мужских стрижках.
             Работаем быстро, осторожно и со вкусом.</p>
-        <ul class="social-links-list">
-            <li><a class="social-link" href="#">Instagram</a></li>
-            <li><a class="social-link" href="#">Youtube</a></li>
-        </ul>
+        
     </div>
 
 </section>
@@ -121,14 +130,11 @@
 <section class="achievements-section">
     <div class="container">
         <ul class="achievements-list">
-            <div>
+           
                 <li class="achievements-list-item"><span>600</span><sup>+</sup> Довольных клиентов в день</li>
-                <li class="achievements-list-item"><span>20</span><sup>+</sup> Наград за отличный сервис</li>
-            </div>
-            <div>
-               <li class="achievements-list-item"><span>50</span><sup>+</sup> Лучших мастеров Киева</li>
+                <li class="achievements-list-item"><span>50</span><sup>+</sup> Наград за отличный сервис</li>
+               <li class="achievements-list-item"><span>20</span><sup>+</sup> Лучших мастеров Киева</li>
                <li class="achievements-list-item"><span>100</span><sup>+</sup> Подарков постоянным клиентам</li>
-            </div>
             
         </ul>
         <div class="achievements-wrapper">
@@ -265,32 +271,57 @@
 
 <section class="contacts-section">
     <div class="container">
-        <h2 class="section-title dark">Онлайн-запись</h2>
-        <form action=""></form>
+        <div class="form-wrapper">
+            <h2 class="section-title dark">Онлайн-запись</h2>
+            <form action="">
+                <label for="">Имя*
+                    <input type="text">
+                </label>
+                <label for="">Телефон*
+                     <input type="text">
+                </label>
+                <!-- <label for="">Телефон*
+                    <input type="text">
+                </label> -->
+                <button class="button" type="submit">отправить</button>
+            </form>
+        </div>
         
-        <h2 class="section-title dark">Контакты</h2>
+        <div class="address-wrapper">
+<h2 class="section-title dark">Контакты</h2>
 
-        <svg width="24" height="24">
+<address class="address">
+
+    <div class="contacts-wrapper">
+         <svg width="24" height="24">
             <use xlink:href="./images/svg-sprite.svg#icon-map-pin"></use>
-        </svg>
-        <address class="address">
-            <p>ул. Васильковая, 7А
-                Киев, 08132</p>
+         </svg>
+         <p>ул. Васильковая, 7А</p>
+         <p>Киев, 08132</p>
+    </div>
+
+    <div class="contacts-wrapper">
+         <svg width="24" height="24">
+            <use xlink:href="./images/svg-sprite.svg#icon-phone"></use>
+         </svg>
+         <a href="tel:+380441111111">+38 044 111 11 11</a>
+    </div>
 
 
-             <svg width="24" height="24">
-                <use xlink:href="./images/svg-sprite.svg#icon-phone"></use>
-             </svg>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
+    <div class="contacts-wrapper">
+         <svg width="24" height="24">
+            <use xlink:href="./images/svg-sprite.svg#icon-mail"></use>
+         </svg>
+         <a class="contacts-mail" href="tomail:barbershop@email.com">barbershop@email.com</a>
+    </div>
+    
 
-            <svg width="24" height="24">
-                <use xlink:href="./images/svg-sprite.svg#icon-mail"></use>
-            </svg>
-            <a class="contacts-mail" href="tomail:barbershop@email.com">barbershop@email.com</a>
-        </address>
+</address>
+
+<h4 class="working-hours">время работы</h4>
+<p class="working-hours-text">Ежедневно с 9:00 до 22:00</p>
+        </div>
         
-        <h4 class="working-hours">время работы</h4>
-        <p class="working-hours-text">Ежедневно с 9:00 до 22:00</p>
     </div>
     
 

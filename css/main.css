@@ -54,6 +54,26 @@ body {
   width: 1280px;
   margin: 0 auto;
 }
+.header-section {
+  padding-top: 40px;
+
+}
+.header-section .container {
+  padding-left: 40px;
+  padding-right: 55px;
+  
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 387px;
+  margin-right: 322px;
+}
 .navigation-list-link {
   font-family: Open Sans;
   font-style: normal;
@@ -99,6 +119,14 @@ body {
   color: #ffffff;
   background-color: #ff6c00;
 }
+
+.header-sidebar {
+  outline: 1px solid tomato;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height: 155px;
+}
 .section-slogan {
   margin-bottom: 20px;
   font-weight: 600;
@@ -121,10 +149,16 @@ body {
   background-color: #303030;
 }
 .hero-section {
-  min-height: 680px;
+  /* min-height: 680px; */
+  padding-top: 272px;
+  padding-bottom: 206px;
+  background-color: gray;
 }
 .hero-section .container {
   background-color: black;
+  background-image: url(../images/img\ 3\ \(1\).jpg);
+  padding-left: 100px;
+  /* min-height: 680px; */
 }
 .hero-title {
   margin-bottom: 20px;
@@ -133,9 +167,7 @@ body {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
-
   letter-spacing: 0.05em;
-
   color: #ffffff;
 }
 .section-subscription {
@@ -151,11 +183,17 @@ body {
 }
 .social-links-list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.social-links-list a{
+  margin-right:40px;
+  margin-left: 40px;
+} 
 .social-links-list::before {
   content: ' ';
-  display: inline-block;
-  vertical-align: super;
+  /* display: inline-block; */
+  /* vertical-align:super; */
   margin-right: 40px;
   width: 60px;
   height: 1px;
@@ -273,16 +311,26 @@ body {
 }
 .achievements-list {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
   color: #303030;
+
 }
 .achievements-list-item {
+  padding: 20px 24px;
   background-color:  #F7F7F7;
   width: 170px;
   height: 133px;
+  
+}
+.achievements-list-item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+.achievements-list-item:nth-child(-n+2) {
+  margin-bottom: 30px;
 }
 .achievements-list span {
   font-weight: 700;
@@ -377,10 +425,23 @@ body {
 .gallery-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.footer-section {
-  padding: 56px 55px;
+.contacts-section .container {
+  display: flex;
+  /* justify-content: space-between; */
+  
+}
+.form-wrapper {
+  padding-left: 56px;
+  padding-right: 40px;
+  background-color: black;
+}
+.address-wrapper {
+  padding-left: 100px;
+  padding-right: 255px;
+  background-image: url(../images/img\ 11\ \(1\).jpg);
 }
 .address {
+  margin-bottom: 70px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -391,10 +452,14 @@ body {
 .address > a {
   color: inherit;
 }
+/* .address:not(:last-child) {
+  margin-bottom: 20px;
+} */
 .contacts-mail {
   text-decoration: underline;
 }
 .working-hours {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -403,6 +468,16 @@ body {
 
   /* color: #ffffff; */
 }
+.working-hours::before {
+content: ' ';
+  display: inline-block;
+  vertical-align:super;
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
 .working-hours-text {
   font-weight: 400;
   font-size: 18px;
@@ -410,6 +485,15 @@ body {
   letter-spacing: 0.02em;
 
   color: #9da4bd;
+}
+.footer-section {
+  padding: 56px 55px;
+}
+.footer-section .container{
+  padding-right: 55px;
+  padding-left: 55px;
+  display: flex;
+  justify-content: space-between;
 }
 .copy {
   font-weight: 600;
