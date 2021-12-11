@@ -287,17 +287,16 @@
     <div class="container">
         <div class="form-wrapper" id="online">
             <h2 class="section-title dark">Онлайн-запись</h2>
-            <form action="">
-                <label for="">Имя*
-                    <input type="text">
-                </label>
-                <label for="">Телефон*
-                     <input type="text">
-                </label>
-                <!-- <label for="">Телефон*
-                    <input type="text">
-                </label> -->
-                <button class="button" type="submit">отправить</button>
+            <form class="contacts-form" autocomplete="off">
+                <div>
+                    <input type="text" placeholder="Имя*">
+                    <input type="text" placeholder="Телефон*">
+                </div>
+                 
+                    <textarea name="message" placeholder="сообщение"></textarea>
+                 
+
+                <button class="form-button" type="submit">отправить</button>
             </form>
         </div>
         

@@ -221,8 +221,6 @@ body {
 }
 .social-links-list::before {
   content: ' ';
-  /* display: inline-block; */
-  /* vertical-align:super; */
   margin-right: 40px;
   width: 60px;
   height: 1px;
@@ -489,16 +487,64 @@ body {
   display: flex;
   min-height: 644px;
 }
+.contacts-section .section-title {
+  margin-bottom: 54px;
+}
 .form-wrapper {
   width: 50%;
   padding-left: 56px;
   padding-right: 40px;
-  background-color: black;
+  background-color: #191c26;
 }
-.button {
+/* .contacts-form {
+  display: inline-block;
+} */
+.contacts-section input,
+.contacts-section textarea {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  resize: none;
+}
+.contacts-section input:first-child {
+  width: 260px;
+  margin-right: 20px;
+}
+.contacts-section input:last-child {
+  width: 250px;
+}
+.contacts-section textarea {
+  display: inline-block;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  width: 540px;
+  height: 76px;
+}
+.contacts-section input:focus,
+.contacts-section textarea:focus {
+  outline: none;
+  resize: none;
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+}
+.contacts-section input:focus::placeholder,
+.contacts-section textarea:focus::placeholder {
+  color: #ffffff;
+}
+.form-button {
+  display: inline-block;
   width: 160px;
   height: 40px;
   text-align: center;
+  color: #ffffff;
   background-color: transparent;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
@@ -508,6 +554,12 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  transition: background-color 250ms var(--time-func);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: var(--accent-color);
 }
 
 .address-wrapper {
