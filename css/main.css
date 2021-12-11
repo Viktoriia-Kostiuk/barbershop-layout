@@ -654,3 +654,15 @@ body {
 
   color: #9da4bd;
 }
+
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  display: block;
+  /* background-color: #ff6c00; */
+}
+.arrow-icon {
+  fill: gray;
+  opacity: 0.7;
+}
