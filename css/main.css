@@ -129,6 +129,80 @@ body {
   margin: 0 auto;
 }
 
+.button-link, .form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #303030;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  -webkit-transition: background-color 250ms var(--time-func);
+  transition: background-color 250ms var(--time-func);
+}
+
+.button-link.dark, .dark.form-button {
+  color: #ffffff;
+}
+
+.button-link:hover, .form-button:hover, .button-link:focus, .form-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.social-links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-links-list a {
+  margin-right: 40px;
+}
+
+.social-links-list::before {
+  content: ' ';
+  margin-right: 40px;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  -webkit-transition: color 250ms var(--time-func);
+  transition: color 250ms var(--time-func);
+}
+
+.social-link:hover, .social-link:focus {
+  color: var(--accent-color);
+}
+
 .header-section {
   position: absolute;
   width: 100%;
@@ -190,42 +264,6 @@ body {
   color: #ffffff;
 }
 
-.button-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 160px;
-  height: 40px;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #303030;
-  background-color: transparent;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  -webkit-transition: background-color 250ms var(--time-func);
-  transition: background-color 250ms var(--time-func);
-}
-
-.button-link.dark {
-  color: #ffffff;
-}
-
-.button-link:hover, .button-link:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
-}
-
 .header-sidebar {
   position: absolute;
   top: 0;
@@ -246,44 +284,6 @@ body {
           align-items: center;
   height: 155px;
   width: 600px;
-}
-
-.social-links-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.social-links-list a {
-  margin-right: 40px;
-}
-
-.social-links-list::before {
-  content: ' ';
-  margin-right: 40px;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-}
-
-.social-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: #303030;
-  -webkit-transition: color 250ms var(--time-func);
-  transition: color 250ms var(--time-func);
-}
-
-.social-link:hover, .social-link:focus {
-  color: var(--accent-color);
 }
 
 .hero-section .container {
@@ -361,7 +361,7 @@ body {
   margin-bottom: 44px;
 }
 
-.price-section .button-link {
+.price-section .button-link, .price-section .form-button {
   margin: 0 auto;
 }
 
@@ -678,22 +678,7 @@ body {
 }
 
 .form-button {
-  display: inline-block;
-  width: 160px;
-  height: 40px;
-  text-align: center;
   color: #ffffff;
-  background-color: transparent;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  -webkit-transition: background-color 250ms var(--time-func);
-  transition: background-color 250ms var(--time-func);
 }
 
 .form-button:hover, .form-button:focus {

@@ -1,0 +1,30 @@
+.social-links-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    margin-right: 40px;
+  }
+  &::before {
+    content: ' ';
+    margin-right: 40px;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+  }
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  transition: color 250ms var(--time-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
