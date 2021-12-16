@@ -1,0 +1,120 @@
+.header-section {
+  position: absolute;
+  width: 100%;
+  padding-top: 40px;
+  .container {
+    position: relative;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 387px;
+  margin-right: 322px;
+  margin-left: 51px;
+}
+.navigation-list-link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: color 250ms var(--time-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.number-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button-link {
+  display: flex;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #303030;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  transition: background-color 250ms var(--time-func);
+
+  &.dark {
+    color: #ffffff;
+  }
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
+}
+
+.header-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%) rotate(-90deg);
+  transform-origin: top right;
+  outline: 1px solid tomato;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 155px;
+  width: 600px;
+}
+
+.social-links-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    margin-right: 40px;
+  }
+  &::before {
+    content: ' ';
+    margin-right: 40px;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+  }
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  transition: color 250ms var(--time-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

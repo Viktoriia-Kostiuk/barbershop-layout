@@ -1,0 +1,28 @@
+.about-section,
+.price-section,
+.master-section,
+.gallery-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about-section .container {
+  display: flex;
+  padding-left: 55px;
+  padding-right: 91px;
+}
+
+.about-section img:first-of-type {
+  margin-right: 30px;
+}
+.about-wrapper {
+  margin-left: 64px;
+}
+.about-text {
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}

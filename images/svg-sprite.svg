@@ -56,9 +56,7 @@
                 stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26.667 9.333l-10.667 8-10.667-8">
             </path>
         </symbol>
-        <symbol id="icon-arrow-up" viewBox="0 0 32 32">
-            <path d="M16 1l-15 15h9v16h12v-16h9z"></path>
-        </symbol>
+
         <symbol id="icon-circle-up" viewBox="0 0 32 32">
             <path
                 d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16-7.163-16-16-16-16 7.163-16 16zM29 16c0 7.18-5.82 13-13 13s-13-5.82-13-13 5.82-13 13-13 13 5.82 13 13z">

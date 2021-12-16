@@ -1,0 +1,13 @@
+.gallery-section .container {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.gallery-section .section-slogan {
+  margin-bottom: 44px;
+}
+.gallery-list {
+  display: flex;
+}
+.gallery-list-item:not(:last-child) {
+  margin-right: 30px;
+}

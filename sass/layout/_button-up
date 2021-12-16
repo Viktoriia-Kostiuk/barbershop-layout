@@ -1,0 +1,10 @@
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  display: block;
+}
+.arrow-icon {
+  fill: gray;
+  opacity: 0.7;
+}
