@@ -35,34 +35,12 @@ body {
   font-style: normal;
 }
 
-.section-subscription {
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: #555555;
-  width: 480px;
-
-  &.dark {
-    color: #9da4bd;
-  }
-}
-
-.section-title {
-  margin-bottom: 20px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-
-  color: #303030;
-
-  &.dark {
-    color: #ffffff;
-  }
+.about-section,
+.price-section,
+.master-section,
+.achievements-section {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 .section-slogan {
@@ -95,5 +73,63 @@ body {
     width: 60px;
     height: 1px;
     background-color: rgba(157, 164, 189, 0.6);
+  }
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+
+  &.dark {
+    color: #ffffff;
+  }
+}
+
+.section-subscription {
+  font-weight: 400;
+
+  letter-spacing: 0.02em;
+  color: #555555;
+
+  &.dark {
+    color: #9da4bd;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .about-section,
+  .price-section,
+  .master-section,
+  .achievements-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and(min-width:1280px) {
+  .about-section,
+  .price-section,
+  .master-section,
+  .achievements-section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 1.17;
+  }
+
+  .section-subscription {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
   }
 }

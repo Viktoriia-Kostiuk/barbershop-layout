@@ -44,6 +44,11 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+  transition: color 250ms var(--time-func);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-sidebar {

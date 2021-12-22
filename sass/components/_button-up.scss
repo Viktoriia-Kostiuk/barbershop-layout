@@ -7,4 +7,10 @@
 .arrow-icon {
   fill: gray;
   opacity: 0.7;
+  transition: fill 250ms var(--time-func);
+
+  .button-up:hover &,
+  .button-up:focus & {
+    fill: var(--accent-color);
+  }
 }

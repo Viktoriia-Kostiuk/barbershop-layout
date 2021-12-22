@@ -2,10 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  a {
-    margin-right: 40px;
-  }
   &::before {
     content: ' ';
     margin-right: 40px;
@@ -13,6 +9,9 @@
     height: 1px;
     background-color: #303030;
   }
+}
+.social-list-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .social-link {
