@@ -1,56 +1,41 @@
 .contacts-section {
-  width: 50%;
   background-color: #111319;
   background-image: url(../images/contacts-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 130px;
-  padding-bottom: 130px;
-  .container {
-    padding-left: 100px;
-    width: 625px;
-    margin-left: 0;
+  .section-title {
+    margin-bottom: 40px;
+    text-align: center;
   }
 }
 
-.contacts-section .section-title {
-  margin-bottom: 54px;
-}
 .address {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-
   color: #9da4bd;
 }
 .address > a {
   color: inherit;
 }
-
 .contacts-wrapper {
   display: flex;
   align-items: center;
-  width: 260px;
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-
   a {
     color: #9da4bd;
   }
   svg {
     margin-right: 16px;
   }
-  &:first-child svg {
-    align-self: flex-start;
-  }
 }
-
 .contacts-mail {
   text-decoration: underline;
 }
@@ -61,7 +46,6 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: #ffffff;
 
   &::before {
@@ -80,6 +64,48 @@
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-
   color: #9da4bd;
+}
+@media screen and(min-width:768px) and(max-width:1280px) {
+  .contacts-section .section-title {
+    text-align: left;
+  }
+  .address-wrap {
+    display: flex;
+    // justify-content: space-between;
+  }
+  .address {
+    margin-right: 90px;
+    margin-bottom: 0;
+  }
+  .contacts-wrapper:first-child {
+    width: 270px;
+  }
+}
+@media screen and(min-width:1280px) {
+  .contacts-section {
+    width: 50%;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    .container {
+      padding-left: 100px;
+      width: 640px;
+      margin-left: 0;
+    }
+  }
+
+  .contacts-section .section-title {
+    margin-bottom: 54px;
+    text-align: left;
+  }
+  .address {
+    margin-bottom: 70px;
+  }
+
+  .contacts-wrapper {
+    width: 260px;
+    &:first-child svg {
+      align-self: flex-start;
+    }
+  }
 }

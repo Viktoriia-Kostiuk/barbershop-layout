@@ -930,13 +930,13 @@ body {
     margin-right: 0;
     padding-left: 55px;
     padding-right: 40px;
-    width: 655px;
+    width: 640px;
   }
   .form-section .section-title {
     margin-bottom: 54px;
   }
   .form-section input {
-    width: 260px;
+    width: 255px;
   }
   .form-section input:first-child {
     margin-right: 30px;
@@ -948,28 +948,20 @@ body {
 }
 
 .contacts-section {
-  width: 50%;
   background-color: #111319;
   background-image: url(../images/contacts-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
-
-.contacts-section .container {
-  padding-left: 100px;
-  width: 625px;
-  margin-left: 0;
 }
 
 .contacts-section .section-title {
-  margin-bottom: 54px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .address {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
@@ -990,7 +982,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 260px;
 }
 
 .contacts-wrapper:not(:last-child) {
@@ -1003,11 +994,6 @@ body {
 
 .contacts-wrapper svg {
   margin-right: 16px;
-}
-
-.contacts-wrapper:first-child svg {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .contacts-mail {
@@ -1040,6 +1026,51 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .contacts-section .section-title {
+    text-align: left;
+  }
+  .address-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .address {
+    margin-right: 90px;
+    margin-bottom: 0;
+  }
+  .contacts-wrapper:first-child {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-section {
+    width: 50%;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .contacts-section .container {
+    padding-left: 100px;
+    width: 640px;
+    margin-left: 0;
+  }
+  .contacts-section .section-title {
+    margin-bottom: 54px;
+    text-align: left;
+  }
+  .address {
+    margin-bottom: 70px;
+  }
+  .contacts-wrapper {
+    width: 260px;
+  }
+  .contacts-wrapper:first-child svg {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .footer-section {
