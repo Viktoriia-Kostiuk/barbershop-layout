@@ -4,54 +4,93 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  .container {
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-
   .section-title {
     margin-bottom: 44px;
   }
-
-  .button-link {
-    margin: 0 auto;
+  .price-section-wrapper {
+    padding: 30px 30px 10px 30px;
+    @media screen and(max-width:1279px) {
+      background: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
   }
-}
-
-.price-section-wrapper {
-  display: flex;
-  margin-bottom: 50px;
-}
-.price-table {
-  padding: 30px 40px;
-  font-weight: 400px;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
-
-  &.first-column {
-    width: 50%;
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  .price-table {
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
   }
-  &.second-column {
-    width: 50%;
-    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-  }
-}
-
-.price-table-item {
-  display: flex;
-  align-items: baseline;
-
-  &:not(:last-child) {
+  .price-table-item {
+    display: flex;
+    align-items: baseline;
     margin-bottom: 20px;
   }
-}
-.price-underline {
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
-  flex-grow: 1;
-  margin: 0 6px;
+  .price-underline {
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin: 0 6px;
+  }
+  .button-link {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  @media screen and(min-width:768px) {
+    .price-section .section-title {
+      margin-bottom: 54px;
+    }
+    .price-section-wrapper {
+      padding: 30px 40px 10px 40px;
+    }
+    .price-table {
+      font-size: 18px;
+      line-height: 1.67;
+    }
+    .button-link {
+      margin-top: 40px;
+    }
+  }
+  @media screen and(min-width:1280px) {
+    .price-section {
+      .container {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+    }
+
+    .price-section-wrapper {
+      display: flex;
+      margin-bottom: 50px;
+    }
+    .price-table {
+      padding: 30px 40px;
+      font-size: 18px;
+      line-height: 1.67;
+
+      &.first-column {
+        width: 50%;
+        background: linear-gradient(
+          180deg,
+          #171a24 0%,
+          rgba(23, 26, 36, 0.2) 100%
+        );
+      }
+      &.second-column {
+        width: 50%;
+        background: linear-gradient(
+          180deg,
+          #090b13 0%,
+          rgba(9, 11, 19, 0.2) 100%
+        );
+      }
+    }
+  }
+  .button-link {
+    margin-top: 50px;
+  }
 }
