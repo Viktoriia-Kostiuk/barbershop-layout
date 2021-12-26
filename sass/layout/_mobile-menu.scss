@@ -1,0 +1,23 @@
+.icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 337px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1;
+  &.is-open {
+    display: block;
+  }
+}

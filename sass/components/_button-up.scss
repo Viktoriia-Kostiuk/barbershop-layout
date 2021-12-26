@@ -3,6 +3,9 @@
   bottom: 20px;
   right: 50px;
   display: block;
+  @media screen and(max-width:768px) {
+    display: none;
+  }
 }
 .arrow-icon {
   fill: gray;

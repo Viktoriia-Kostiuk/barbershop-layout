@@ -40,15 +40,15 @@
                     <a class="button-link dark" href="#online">онлайн-запись</a>
                     <a class="number-link" href="tel:+380441111111">+38 044 111 11 11</a>
 
-                    
-                </div>
-                
-               
+                </div> 
             </div>
-            <button type="button" class="menu-button">
-                <svg width="40" height="40">
-                    <use xlink:href="./images/menu_40px.svg"></use>
-                    <!-- <use xlink:href="./images/close_40px.svg"></use> -->
+            <button type="button" 
+              class="menu-button" 
+              aria-expanded="false" 
+              data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" xlink:href="./images/menu_40px.svg"></use>
+                    <use class="icon-close" xlink:href="./images/close_40px.svg"></use>
                 </svg>
             </button>
 
@@ -59,7 +59,7 @@
                 </ul>
                
             </aside>
-            
+            <div class="menu-container" data-menu></div>
         </div>
 
     </header>
