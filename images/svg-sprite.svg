@@ -56,7 +56,16 @@
                 stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26.667 9.333l-10.667 8-10.667-8">
             </path>
         </symbol>
-
+        <symbol id="icon-close" viewBox="0 0 32 32">
+            <path
+                d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z">
+            </path>
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+            <path fill="#fff" style="fill: var(--color2, #fff)"
+                d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z">
+            </path>
+        </symbol>
         <symbol id="icon-circle-up" viewBox="0 0 32 32">
             <path
                 d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16-7.163-16-16-16-16 7.163-16 16zM29 16c0 7.18-5.82 13-13 13s-13-5.82-13-13 5.82-13 13-13 13 5.82 13 13z">
