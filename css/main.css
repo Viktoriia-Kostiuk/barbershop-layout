@@ -578,14 +578,28 @@ body {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .hero-section {
+    background-image: url(/images/hero/m-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (max-width: 767px) and (min-resolution: 192dpi) and (min-width: 320px), screen and (max-width: 767px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero-section {
+    background-image: url(/images/hero/m-hero@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .hero-section .container {
   min-height: 580px;
   padding-right: 31px;
   padding-left: 31px;
   padding-top: 208px;
   padding-bottom: 40px;
-  background-image: url(../images/Slider@1x.jpg);
-  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -620,7 +634,24 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-section .container {
+    background-image: url(/images/hero/t-hero.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section .container {
+    background-image: url(/images/hero/t-hero@2x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 609px 680px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero-slider {
     position: absolute;
     bottom: 40px;
@@ -660,9 +691,20 @@ body {
     min-height: 680px;
     padding-right: 40px;
     padding-top: 272px;
+    background-image: url(/images/hero/d-hero.png);
+    background-repeat: no-repeat;
     background-size: 1085px 680px;
     background-position: 155px 0px;
   }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-width: 1280px) and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-width: 1280px) and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero-section .container {
+    background-image: url(/images/hero/d-hero@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .hero-wrapper {
     margin-left: 255px;
   }
