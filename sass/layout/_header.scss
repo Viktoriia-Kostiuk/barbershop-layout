@@ -33,7 +33,7 @@
     color: var(--accent-color);
   }
 }
-@media screen and(max-width:768px) {
+@media screen and(max-width:767px) {
   .navigation-list-item:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -78,10 +78,6 @@
 
   .logo {
     fill: #303030;
-  }
-  .header-links-list {
-    display: block;
-    text-align: center;
   }
 
   .header-section .header-sidebar {
@@ -139,11 +135,12 @@
   }
   .menu-container {
     display: flex;
-    align-items: flex-start;
   }
   .header-links-list {
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
+    // align-self: flex-start;
   }
 }
 

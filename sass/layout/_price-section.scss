@@ -11,7 +11,7 @@
     background-image: url(/images/price/m-price@2x.png);
   }
 }
-.section-title {
+.price-section .section-title {
   margin-bottom: 44px;
 }
 .price-section-wrapper {
@@ -38,7 +38,7 @@
   flex-grow: 1;
   margin: 0 6px;
 }
-.button-link {
+.price-section .button-link {
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -67,7 +67,7 @@
     font-size: 18px;
     line-height: 1.67;
   }
-  .button-link {
+  .price-section .button-link {
     margin-top: 40px;
   }
 }
@@ -113,6 +113,6 @@
     }
   }
 }
-.button-link {
+.price-section .button-link {
   margin-top: 50px;
 }

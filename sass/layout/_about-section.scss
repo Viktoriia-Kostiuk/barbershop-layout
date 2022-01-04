@@ -32,6 +32,9 @@
   .about-wrapper {
     margin-left: 30px;
   }
+  .about-section .section-title {
+    margin-bottom: 20px;
+  }
   .about-section .section-subscription {
     width: 330px;
   }
@@ -43,6 +46,9 @@
   .about-image-wrapper-item:first-child {
     margin-bottom: 30px;
   }
+  // .about-section .section-title {
+  //   margin-bottom: 0;
+  // }
 }
 
 @media screen and(min-width:1280px) {
@@ -62,9 +68,15 @@
   }
   .about-section .section-title {
     width: 500px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
   }
   .about-section .section-subscription {
     width: 500px;
+    font-size: 18px;
+    line-height: 1.67;
   }
   .about-text {
     margin-bottom: 44px;

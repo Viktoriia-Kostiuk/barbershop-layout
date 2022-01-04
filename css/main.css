@@ -337,7 +337,7 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation-list-item:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -381,10 +381,6 @@ body {
   }
   .logo {
     fill: #303030;
-  }
-  .header-links-list {
-    display: block;
-    text-align: center;
   }
   .header-section .header-sidebar {
     display: block;
@@ -457,9 +453,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .header-links-list {
     display: -webkit-box;
@@ -469,6 +462,7 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    text-align: center;
   }
 }
 
@@ -533,7 +527,7 @@ body {
   fill: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -576,6 +570,12 @@ body {
 
 .backdrop.is-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop.is-open {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -752,6 +752,9 @@ body {
   .about-wrapper {
     margin-left: 30px;
   }
+  .about-section .section-title {
+    margin-bottom: 20px;
+  }
   .about-section .section-subscription {
     width: 330px;
   }
@@ -784,9 +787,15 @@ body {
   }
   .about-section .section-title {
     width: 500px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
   }
   .about-section .section-subscription {
     width: 500px;
+    font-size: 18px;
+    line-height: 1.67;
   }
   .about-text {
     margin-bottom: 44px;
@@ -808,7 +817,7 @@ body {
   }
 }
 
-.section-title {
+.price-section .section-title {
   margin-bottom: 44px;
 }
 
@@ -850,7 +859,7 @@ body {
   margin: 0 6px;
 }
 
-.button-link, .form-button {
+.price-section .button-link, .price-section .form-button {
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -878,7 +887,7 @@ body {
     font-size: 18px;
     line-height: 1.67;
   }
-  .button-link, .form-button {
+  .price-section .button-link, .price-section .form-button {
     margin-top: 40px;
   }
 }
@@ -923,7 +932,7 @@ body {
   }
 }
 
-.button-link, .form-button {
+.price-section .button-link, .price-section .form-button {
   margin-top: 50px;
 }
 
@@ -1117,7 +1126,7 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1279px) {
   .master-list-item:not(:last-child) {
     margin-bottom: 64px;
   }
@@ -1355,10 +1364,6 @@ body {
   color: #9da4bd;
 }
 
-.address > a {
-  color: inherit;
-}
-
 .contacts-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1374,6 +1379,12 @@ body {
 
 .contacts-wrapper a {
   color: #9da4bd;
+  -webkit-transition: color 250ms var(--time-func);
+  transition: color 250ms var(--time-func);
+}
+
+.contacts-wrapper a:hover, .contacts-wrapper a:focus {
+  color: var(--accent-color);
 }
 
 .contacts-wrapper svg {

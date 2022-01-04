@@ -25,9 +25,7 @@
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
-.address > a {
-  color: inherit;
-}
+
 .contacts-wrapper {
   display: flex;
   align-items: center;
@@ -36,6 +34,11 @@
   }
   a {
     color: #9da4bd;
+    transition: color 250ms var(--time-func);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
   svg {
     margin-right: 16px;

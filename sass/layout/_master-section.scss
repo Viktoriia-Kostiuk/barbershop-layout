@@ -57,7 +57,7 @@
 
   color: var(--accent-color);
 }
-@media screen and(min-width:480px) and (max-width: 767px) {
+@media screen and(min-width:480px) and (max-width: 1279px) {
   .master-list-item:not(:last-child) {
     margin-bottom: 64px;
   }
