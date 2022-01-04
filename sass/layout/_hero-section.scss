@@ -1,12 +1,12 @@
 .hero-section {
   @media screen and(max-width:767px) {
-    background-image: url(images/hero/m-hero.png);
+    background-image: url(../images/hero/m-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
       screen and (min-resolution: 192dpi) and (min-width: 320px),
       screen and (min-resolution: 2dppx) and (min-width: 320px) {
-      background-image: url(images/hero/m-hero@2x.png);
+      background-image: url(../images/hero/m-hero.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -55,13 +55,13 @@
 }
 @media screen and(min-width:768px) and(max-width:1279px) {
   .hero-section .container {
-    background-image: url(/images/hero/t-hero.png);
+    background-image: url(../images/hero/t-hero.png);
     background-repeat: no-repeat;
     background-position: right;
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
       screen and (min-resolution: 2dppx) and (min-width: 768px) {
-      background-image: url(/images/hero/t-hero@2x.png);
+      background-image: url(../images/hero/t-hero@2x.png);
       background-repeat: no-repeat;
       background-position: right;
       background-size: 609px 680px;
@@ -109,14 +109,14 @@
     min-height: 680px;
     padding-right: 40px;
     padding-top: 272px;
-    background-image: url(/images/hero/d-hero.png);
+    background-image: url(../images/hero/d-hero.png);
     background-repeat: no-repeat;
     background-size: 1085px 680px;
     background-position: 155px 0px;
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
       screen and (min-resolution: 192dpi) and (min-width: 1280px),
       screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-      background-image: url(/images/hero/d-hero@2x.png);
+      background-image: url(../images/hero/d-hero@2x.png);
     }
   }
 
