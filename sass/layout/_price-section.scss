@@ -3,12 +3,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(/images/price/m-price.png);
+  background-image: url(../images/price/m-price.png);
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
     screen and (min-resolution: 192dpi) and (min-width: 320px),
     screen and (min-resolution: 2dppx) and (min-width: 320px) {
-    background-image: url(/images/price/m-price@2x.png);
+    background-image: url(../images/price/m-price@2x.png);
   }
 }
 .price-section .section-title {
@@ -49,12 +49,12 @@
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: cover;
-    background-image: url(/images/price/t-price.png);
+    background-image: url(../images/price/t-price.png);
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
       screen and (min-resolution: 2dppx) and (min-width: 768px) {
-      background-image: url(/images/price/t-price@2x.png);
+      background-image: url(../images/price/t-price@2x.png);
     }
   }
   .price-section .section-title {
@@ -74,11 +74,11 @@
 
 @media screen and(min-width:1280px) {
   .price-section {
-    background-image: url(/images/price/d-price.png);
+    background-image: url(../images/price/d-price.png);
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
       screen and (min-resolution: 192dpi) and (min-width: 1280px),
       screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-      background-image: url(/images/price/d-price@2x.png);
+      background-image: url(../images/price/d-price@2x.png);
     }
     .container {
       padding-left: 55px;

@@ -1,13 +1,13 @@
 .contacts-section {
   background-color: #111319;
-  background-image: url(/images/contacts/m-contacts.png);
+  background-image: url(../images/contacts/m-contacts.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
     screen and (min-resolution: 192dpi) and (min-width: 320px),
     screen and (min-resolution: 2dppx) and (min-width: 320px) {
-    background-image: url(/images/contacts/m-contacts@2x.png);
+    background-image: url(../images/contacts/m-contacts@2x.png);
   }
   .section-title {
     margin-bottom: 40px;
@@ -76,11 +76,11 @@
 }
 @media screen and(min-width:768px) and(max-width:1279px) {
   .contacts-section {
-    background-image: url(/images/contacts/t-contacts.png);
+    background-image: url(../images/contacts/t-contacts.png);
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
       screen and (min-resolution: 2dppx) and (min-width: 768px) {
-      background-image: url(/images/contacts/t-contacts@2x.png);
+      background-image: url(../images/contacts/t-contacts@2x.png);
     }
   }
   .contacts-section .section-title {
@@ -108,11 +108,11 @@
       width: 640px;
       margin-left: 0;
     }
-    background-image: url(/images/contacts/d-contacts.png);
+    background-image: url(../images/contacts/d-contacts.png);
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
       screen and (min-resolution: 192dpi) and (min-width: 1280px),
       screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-      background-image: url(/images/contacts/d-contacts@2x.png);
+      background-image: url(../images/contacts/d-contacts@2x.png);
     }
   }
 
