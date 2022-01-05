@@ -295,6 +295,7 @@ body {
   position: absolute;
   width: 100%;
   padding-top: 40px;
+  z-index: 1;
 }
 
 .header-section .container {
@@ -550,7 +551,7 @@ body {
     padding-top: 118px;
     background-color: #fff;
     overflow-y: scroll;
-    z-index: 2;
+    z-index: 10;
   }
   .menu-container.is-open {
     display: block;
@@ -595,6 +596,7 @@ body {
 }
 
 .hero-section .container {
+  position: relative;
   min-height: 580px;
   padding-right: 31px;
   padding-left: 31px;
