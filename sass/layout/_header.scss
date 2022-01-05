@@ -52,22 +52,22 @@
     margin-bottom: 24px;
   }
   .header-section .social-links-list {
-    outline: 1px solid tomato;
-    // margin-right: 105px;
-    // display: block;
     display: flex;
     flex-wrap: wrap;
-    // padding-left: 60px;
-    width: 192px;
+    width: 195px;
     height: 62px;
-    // flex-direction: column;
   }
+
   .header-section .social-link {
     font-size: 14px;
     line-height: 1.36;
   }
   .header-section .social-list-item:first-child {
-    margin-right: 40px;
+    margin-right: 0;
+  }
+  .header-section .social-list-item:last-child {
+    margin-left: 100px;
+    margin-top: 24px;
   }
 }
 @media screen and(min-width:768px) {
@@ -79,7 +79,10 @@
   .logo {
     fill: #303030;
   }
-
+  .menu-container {
+    display: flex;
+    align-items: center;
+  }
   .header-section .header-sidebar {
     display: block;
     position: absolute;

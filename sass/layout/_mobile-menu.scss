@@ -36,11 +36,6 @@
       display: block;
     }
   }
-
-  @media screen and(min-width:768px) {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .backdrop {
@@ -53,10 +48,10 @@
   height: 100vh;
   z-index: 1;
   // transition: all 2500ms var(--time-func);
-}
-.backdrop.is-open {
-  display: block;
-  @media screen and(min-width:768px) {
-    display: none;
+  &.is-open {
+    display: block;
+    @media screen and(min-width:768px) {
+      display: none;
+    }
   }
 }

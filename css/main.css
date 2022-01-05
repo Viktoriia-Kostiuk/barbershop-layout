@@ -356,13 +356,12 @@ body {
     margin-bottom: 24px;
   }
   .header-section .social-links-list {
-    outline: 1px solid tomato;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 192px;
+    width: 195px;
     height: 62px;
   }
   .header-section .social-link {
@@ -370,7 +369,11 @@ body {
     line-height: 1.36;
   }
   .header-section .social-list-item:first-child {
-    margin-right: 40px;
+    margin-right: 0;
+  }
+  .header-section .social-list-item:last-child {
+    margin-left: 100px;
+    margin-top: 24px;
   }
 }
 
@@ -381,6 +384,14 @@ body {
   }
   .logo {
     fill: #303030;
+  }
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-section .header-sidebar {
     display: block;
@@ -543,17 +554,6 @@ body {
   }
   .menu-container.is-open {
     display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
