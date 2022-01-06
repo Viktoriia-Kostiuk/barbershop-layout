@@ -390,9 +390,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header-section .header-sidebar {
     display: block;
@@ -446,6 +446,9 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header-section {
+    padding-top: 0;
+  }
   .header-section .navigation-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -456,15 +459,13 @@ body {
     width: 339px;
     margin-right: 47px;
     margin-left: 78px;
-  }
-  .number-link {
-    display: block;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-top: 40px;
+  }
+  .number-link {
+    margin-top: 20px;
   }
   .header-links-list {
     display: -webkit-box;
@@ -482,6 +483,11 @@ body {
   .header-section .container {
     padding-left: 55px;
     padding-right: 55px;
+  }
+  .menu-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-section .navigation-list {
     display: -webkit-box;
@@ -810,12 +816,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(/images/price/m-price.png);
+  background-image: url(../images/price/m-price.png);
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .price-section {
-    background-image: url(/images/price/m-price@2x.png);
+    background-image: url(../images/price/m-price@2x.png);
   }
 }
 
@@ -868,13 +874,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .price-section {
-    background-image: url(/images/price/t-price.png);
+    background-image: url(../images/price/t-price.png);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .price-section {
-    background-image: url(/images/price/t-price@2x.png);
+    background-image: url(../images/price/t-price@2x.png);
   }
 }
 
@@ -896,13 +902,13 @@ body {
 
 @media screen and (min-width: 1280px) {
   .price-section {
-    background-image: url(/images/price/d-price.png);
+    background-image: url(../images/price/d-price.png);
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-width: 1280px) and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-width: 1280px) and (min-resolution: 2dppx) and (min-width: 1280px) {
   .price-section {
-    background-image: url(/images/price/d-price@2x.png);
+    background-image: url(../images/price/d-price@2x.png);
   }
 }
 
@@ -1338,7 +1344,7 @@ body {
 
 .contacts-section {
   background-color: #111319;
-  background-image: url(/images/contacts/m-contacts.png);
+  background-image: url(../images/contacts/m-contacts.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1346,7 +1352,7 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .contacts-section {
-    background-image: url(/images/contacts/m-contacts@2x.png);
+    background-image: url(../images/contacts/m-contacts@2x.png);
   }
 }
 
@@ -1427,13 +1433,13 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts-section {
-    background-image: url(/images/contacts/t-contacts.png);
+    background-image: url(../images/contacts/t-contacts.png);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .contacts-section {
-    background-image: url(/images/contacts/t-contacts@2x.png);
+    background-image: url(../images/contacts/t-contacts@2x.png);
   }
 }
 
@@ -1460,7 +1466,7 @@ body {
     width: 50%;
     padding-top: 130px;
     padding-bottom: 130px;
-    background-image: url(/images/contacts/d-contacts.png);
+    background-image: url(../images/contacts/d-contacts.png);
   }
   .contacts-section .container {
     padding-left: 100px;
@@ -1471,7 +1477,7 @@ body {
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-width: 1280px) and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-width: 1280px) and (min-resolution: 2dppx) and (min-width: 1280px) {
   .contacts-section {
-    background-image: url(/images/contacts/d-contacts@2x.png);
+    background-image: url(../images/contacts/d-contacts@2x.png);
   }
 }
 
