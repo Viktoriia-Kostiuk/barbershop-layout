@@ -168,7 +168,6 @@ body {
 }
 
 .container {
-  outline: 1px solid tomato;
   margin: 0 auto;
 }
 
@@ -403,7 +402,6 @@ body {
             transform: translate(-100%) rotate(-90deg);
     -webkit-transform-origin: top right;
             transform-origin: top right;
-    outline: 1px solid tomato;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
